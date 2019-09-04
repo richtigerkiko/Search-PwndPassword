@@ -23,11 +23,11 @@ Function Search-PwndPassword{
 
 .EXAMPLE
 
-  Get-PwndPassword
+  Search-PwndPassword
 
-  "Pony1" | Get-PwndPassword
+  "Pony1" | Search-PwndPassword
 
-  Get-PwndPassword "Pony1"
+  Search-PwndPassword "Pony1"
 
 #>
 
