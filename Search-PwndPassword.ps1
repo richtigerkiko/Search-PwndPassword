@@ -69,7 +69,7 @@ $Password
         $hashSuffix = $hashWord.SubString(5,35) + ":"
     
         
-        $resultList = Invoke-WebRequest -Uri ($baseUrlOfService + $shortHash) | Select-Object Content -ExpandProperty Content
+        $resultList = Invoke-WebRequest -Uri ($baseUrlOfService + $shortHash) -UseBasicParsing | Select-Object Content -ExpandProperty Content
     
         $result = $resultList.Split('') | Select-String $hashSuffix | Out-String
     
